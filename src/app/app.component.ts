@@ -17,3 +17,7 @@ export class AppComponent
 {
     wydatki: Wydatek[];
 }
+ngOnInit() 
+{
+
+}
