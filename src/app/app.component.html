@@ -6,3 +6,18 @@
   <h2>Lista wydatków</h2>
   
 </div>
+<table class="table">
+    <tr>
+        <th>Kategoria</th>
+        <th>Data</th>
+        <th>Kwota</th>
+        <th>Opis</th>
+    </tr>
+
+<tr *ngFor="let wydatek of wydatki">
+    <td>{{wydatek.kategoria}}</td>
+    <td>{{wydatek.data}}</td>
+    <td>{{wydatek.kwota}} zł</td>
+    <td>{{wydatek.opis}}</td>
+</tr>
+</table>

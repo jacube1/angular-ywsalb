@@ -1,5 +1,5 @@
 export class Wydatek 
-export const KATEGORIE = [ 'Tankowanie', 'Myjnia', 'Serwis', 'Inne' ];
+
 {
     constructor
       (
@@ -12,3 +12,4 @@ export const KATEGORIE = [ 'Tankowanie', 'Myjnia', 'Serwis', 'Inne' ];
 
     }
 }
+export const KATEGORIE = [ 'Tankowanie', 'Myjnia', 'Serwis', 'Inne' ];
