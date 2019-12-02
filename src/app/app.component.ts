@@ -1,7 +1,5 @@
-
 import { Wydatek, KATEGORIE } from './wydatek';
 import { Component, OnInit } from '@angular/core';
-
 @Component
 (
   {
