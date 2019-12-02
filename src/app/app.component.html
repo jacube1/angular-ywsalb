@@ -1,10 +1,6 @@
 <div class="container">
-  <h1>
-    AutoKsiegowy
-  </h1>
-
+  <h1>AutoKsiegowy</h1>
   <h2>Lista wydatków</h2>
-  
 </div>
 <table class="table">
   <tr>
@@ -12,12 +8,13 @@
     <th>Data</th>
     <th>Kwota</th>
     <th>Opis</th>
-    <th>Zużycie paliwa(l/km</th>
+    <th>Zużycie paliwa(l/km)</th>
   </tr>
   <tr *ngFor="let wydatek of wydatki">
     <td>{{wydatek.kategoria}}</td>
     <td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
     <td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
     <td>{{wydatek.opis}}</td>
+    <td>{{ileKm/ileLitrow}}</td>
   </tr>
 </table>
