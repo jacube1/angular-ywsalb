@@ -1,3 +1,4 @@
+import { Wydatek, KATEGORIE } from './wydatek';
 import { Component } from '@angular/core';
 
 @Component({

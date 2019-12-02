@@ -1,6 +1,6 @@
 export class Wydatek 
+export const KATEGORIE = [ 'Tankowanie', 'Myjnia', 'Serwis', 'Inne' ];
 {
-
     constructor
       (
         public kategoria: string,
