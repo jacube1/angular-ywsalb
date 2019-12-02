@@ -7,17 +7,17 @@
   
 </div>
 <table class="table">
-    <tr>
-        <th>Kategoria</th>
-        <th>Data</th>
-        <th>Kwota</th>
-        <th>Opis</th>
-    </tr>
-
-<tr *ngFor="let wydatek of wydatki">
+  <tr>
+    <th>Kategoria</th>
+    <th>Data</th>
+    <th>Kwota</th>
+    <th>Opis</th>
+    <th>Zużycie paliwa(l/km</th>
+  </tr>
+  <tr *ngFor="let wydatek of wydatki">
     <td>{{wydatek.kategoria}}</td>
     <td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
     <td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
     <td>{{wydatek.opis}}</td>
-</tr>
+  </tr>
 </table>
