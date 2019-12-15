@@ -8,13 +8,13 @@
     <th>Data</th>
     <th>Kwota</th>
     <th>Opis</th>
-    <th>l/k</th>
+    <th>litrow/kilometry</th>
   </tr>
   <tr *ngFor="let wydatek of wydatki">
     <td>{{wydatek.kategoria}}</td>
     <td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
     <td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
     <td>{{wydatek.opis}}</td>
-    <td>{{ileKm/ileLitrow}}</td>
+    <td>{{ileKm}}</td>
   </tr>
 </table>
