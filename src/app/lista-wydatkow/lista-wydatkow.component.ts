@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Wydatek, KATEGORIE } from '../wydatek';
+import { WydatkiService } from '../wydatki.service';
 @Component({
   selector: 'app-lista-wydatkow',
   templateUrl: './lista-wydatkow.component.html',
@@ -8,14 +9,14 @@ import { Wydatek, KATEGORIE } from '../wydatek';
 export class ListaWydatkowComponent implements OnInit 
 {
 
-  constructor() 
+  constructor(private wydatkiService: WydatkiService) 
   { 
-
+    
   }
  wydatki: Wydatek[];
   ngOnInit() 
-  {
-    this.wydatki = 
+  { 
+    this.wydatki=this.wydatkiService.getWydatki();
     [
       new Wydatek('Tankowanie', 252.43, '', new Date(2018, 4, 30),1.1,),
       new Wydatek('Myjnia', 75, '', new Date(2018, 4, 2)),

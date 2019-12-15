@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Wydatek, KATEGORIE } from './wydatek';
 @Injectable()
-export class ListaWydatkowService 
+export class WydatkiService 
 {
   private wydatki: Wydatek[];
   constructor() 
