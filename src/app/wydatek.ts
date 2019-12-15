@@ -6,8 +6,8 @@ export class Wydatek
         public kwota: number,
         public opis: string,
         public data: Date,
+        public ileLitrow: number,
         public ileKm: number,
-        public ileLitrow: number
       ) 
     {
 
