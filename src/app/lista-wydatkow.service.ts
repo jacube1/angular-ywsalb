@@ -16,4 +16,8 @@ export class ListaWydatkowService
       new Wydatek('Tankowanie', 325.20, 'Do pełna wczoraj', new Date(2017, 8, 12),'',4.5)
     ];
   }
+  getWydatki() 
+  {
+    return this.wydatki;
+  }
 }
