@@ -1,20 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { Wydatek, KATEGORIE } from '../wydatek';
-@Component({
-  selector: 'app-lista-wydatkow',
-  templateUrl: './lista-wydatkow.component.html',
-  styleUrls: ['./lista-wydatkow.component.css']
-})
-export class ListaWydatkowComponent implements OnInit 
+import { Injectable } from '@angular/core';
+import { Wydatek, KATEGORIE } from './wydatek';
+@Injectable()
+export class ListaWydatkowService 
 {
-
+  private wydatki: Wydatek[];
   constructor() 
   { 
-
-  }
- wydatki: Wydatek[];
-  ngOnInit() 
-  {
     this.wydatki = 
     [
       new Wydatek('Tankowanie', 252.43, '', new Date(2018, 4, 30),1.1,),
@@ -25,5 +16,4 @@ export class ListaWydatkowComponent implements OnInit
       new Wydatek('Tankowanie', 325.20, 'Do pełna wczoraj', new Date(2017, 8, 12),'',4.5)
     ];
   }
-
 }
