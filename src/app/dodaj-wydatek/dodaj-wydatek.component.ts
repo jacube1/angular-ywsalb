@@ -9,12 +9,14 @@ import { WydatkiService } from '../wydatki.service';
 export class DodajWydatekComponent implements OnInit 
 {
   nowyWydatek: Wydatek;
-  constructor() 
-  { 
+  kategorie: string[];
+constructor(private wydatkiService: WydatkiService) 
+{ 
 
-  }
+}
   ngOnInit() 
   {
     this.nowyWydatek = new Wydatek('Tankowanie', null, null, null);
+    this.kategorie = this.wydatkiService.getKategorie();
   }
 }
