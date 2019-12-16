@@ -17,7 +17,7 @@ constructor(private wydatkiService: WydatkiService, private router: Router)
 }
   ngOnInit() 
   {
-    this.nowyWydatek = new Wydatek('Tankowanie', null, null, null);
+    this.nowyWydatek = new Wydatek(null, 'Tankowanie', null, null, null);
     this.kategorie = this.wydatkiService.getKategorie();
   }
   onSubmit() 
