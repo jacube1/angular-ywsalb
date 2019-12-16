@@ -19,8 +19,9 @@ constructor(private wydatkiService: WydatkiService)
     this.nowyWydatek = new Wydatek('Tankowanie', null, null, null);
     this.kategorie = this.wydatkiService.getKategorie();
   }
-   onSubmit() 
+  onSubmit() 
   {
     this.wydatkiService.dodajWydatek(this.nowyWydatek);
+    this.nowyWydatek = new Wydatek('Tankowanie', null, null, null);
   }
 }
