@@ -11,14 +11,16 @@ export class DodajWydatekComponent implements OnInit
 {
   nowyWydatek: Wydatek;
   kategorie: string[];
-constructor(private wydatkiService: WydatkiService) 
-{ 
 
-}
+constructor(private wydatkiService: WydatkiService, private router: Router) 
+  { 
+
+  }
   ngOnInit() 
   {
     this.nowyWydatek = new Wydatek('Tankowanie', null, null, null);
     this.kategorie = this.wydatkiService.getKategorie();
+    this.router.navigate(['/wydatki']);
   }
   onSubmit() 
   {
