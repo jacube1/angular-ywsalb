@@ -21,6 +21,6 @@ constructor(private wydatkiService: WydatkiService)
   }
    onSubmit() 
   {
-  
+    this.wydatkiService.dodajWydatek(this.nowyWydatek);
   }
 }
