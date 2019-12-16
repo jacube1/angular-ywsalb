@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Wydatek } from '../wydatek';
+import { WydatkiService } from '../wydatki.service';
 @Component({
   selector: 'app-dodaj-wydatek',
   templateUrl: './dodaj-wydatek.component.html',
