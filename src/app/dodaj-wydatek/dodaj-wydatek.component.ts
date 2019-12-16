@@ -7,12 +7,13 @@ import { Wydatek } from '../wydatek';
 })
 export class DodajWydatekComponent implements OnInit 
 {
+  nowyWydatek: Wydatek;
   constructor() 
   { 
 
   }
   ngOnInit() 
   {
-
+    this.nowyWydatek = new Wydatek('Tankowanie', null, null, null);
   }
 }
