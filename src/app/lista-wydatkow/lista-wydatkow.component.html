@@ -2,12 +2,12 @@
 
 <table class="table">
   <tr>
-    <th></th>
     <th>Kategoria</th>
     <th>Data</th>
     <th>Kwota</th>
     <th>Opis</th>
     <th>litrow/kilometry</th>
+    <th></th>
   </tr>
   <tr *ngFor="let wydatek of wydatki">
     <td>{{wydatek.kategoria}}</td>
@@ -32,6 +32,6 @@
     <td>
         <button class="btn btn-danger" (click)="usunWydatek(wydatek.id)">Usuń</button>
     </td>
-    
+
   </tr>
 </table>

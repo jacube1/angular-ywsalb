@@ -26,5 +26,7 @@ export class ListaWydatkowComponent implements OnInit
       new Wydatek('Tankowanie', 325.20, 'Do pełna wczoraj', new Date(2017, 8, 12),'',4.5)
     ];
   }
-
+usunWydatek(id: number) {
+    this.wydatkiService.usunWydatek(id);
+  }
 }
