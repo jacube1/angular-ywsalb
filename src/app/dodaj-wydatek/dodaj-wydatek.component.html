@@ -4,7 +4,8 @@
   <div class="row">
     <div class="col">
       <label>Kategoria:</label>
-      <select class="form-control" name="kategoria"[(ngModel)]="nowyWydatek.kategoria">
+      <select class="form-control" name="kategoria" [(ngModel)]="nowyWydatek.kategoria">
+        <option *ngFor="let k of kategorie">{{k}}</option>
       </select>
     </div>
     <div class="col">
