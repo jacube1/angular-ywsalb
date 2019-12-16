@@ -4,6 +4,7 @@ import { Wydatek, KATEGORIE } from './wydatek';
 export class WydatkiService 
 {
   private wydatki: Wydatek[];
+  private nextId: number;
   constructor() 
   { 
     this.wydatki = 
@@ -15,6 +16,7 @@ export class WydatkiService
       new Wydatek(5,'Tankowanie', 325.20, 'Do pełna po urlopie', new Date(2017, 7, 12),1.1,1.2),
       new Wydatek(6,'Tankowanie', 325.20, 'Do pełna wczoraj', new Date(2017, 8, 12),'',4.5)
     ];
+    this.nextId = 7;
   }
   getWydatki() 
   {
@@ -27,5 +29,10 @@ export class WydatkiService
   dodajWydatek(nowyWydatek: Wydatek): void 
   {
     this.wydatki.push(nowyWydatek);
+    nowyWydatek.id = this.nextId++;
+  }
+  usunWydatek(id: number): void {
+    const ind = this.wydatki.findIndex(wydatek => wydatek.id === id);
+    this.wydatki.splice(ind, 1);
   }
 }
